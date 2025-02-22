@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{7D24CC59-35FB-439E-8B64-697A370C8B15}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jewellery_Website</RootNamespace>
+    <AssemblyName>Jewellery_Website</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44343</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jewellery_Website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jewellery_Website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BestSellers.html" />
+    <Content Include="BestSellers2.html" />
+    <Content Include="BestSellers3.html" />
+    <Content Include="card.css" />
+    <Content Include="card.html" />
+    <Content Include="EARRINGS.HTML" />
+    <Content Include="EARRINGS2.html" />
+    <Content Include="EARRINGS3.html" />
+    <Content Include="ff.html" />
+    <Content Include="GOLD COIN.HTML">
+      <BrowseToURL>~/GOLD COIN.HTML</BrowseToURL>
+    </Content>
+    <Content Include="GOLD COIN2.html" />
+    <Content Include="GOLD COIN3.html" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\a1.jpg" />
+    <Content Include="Images\a10.jpg" />
+    <Content Include="Images\a11.jpg" />
+    <Content Include="Images\a12.jpg" />
+    <Content Include="Images\a13.jpg" />
+    <Content Include="Images\a14.jpg" />
+    <Content Include="Images\a15.jpg" />
+    <Content Include="Images\a16.jpg" />
+    <Content Include="Images\a17.jpg" />
+    <Content Include="Images\a18.jpg" />
+    <Content Include="Images\a19.jpg" />
+    <Content Include="Images\a2.jpg" />
+    <Content Include="Images\a3.jpg" />
+    <Content Include="Images\a4.jpg" />
+    <Content Include="Images\a5.jpg" />
+    <Content Include="Images\a6.jpg" />
+    <Content Include="Images\a7.jpg" />
+    <Content Include="Images\a8.jpg" />
+    <Content Include="Images\a9.jpg" />
+    <Content Include="Images\anklet.jpg" />
+    <Content Include="Images\c1.jpg" />
+    <Content Include="Images\c10.jpg" />
+    <Content Include="Images\c11.jpg" />
+    <Content Include="Images\c12.jpg" />
+    <Content Include="Images\c13.jpg" />
+    <Content Include="Images\c15.jpg" />
+    <Content Include="Images\c17.jpg" />
+    <Content Include="Images\c2.jpg" />
+    <Content Include="Images\c3.jpg" />
+    <Content Include="Images\c4.jpg" />
+    <Content Include="Images\c5.jpg" />
+    <Content Include="Images\c6.jpg" />
+    <Content Include="Images\c7.jpg" />
+    <Content Include="Images\c8.jpg" />
+    <Content Include="Images\c9.jpg" />
+    <Content Include="Images\chain.jpg" />
+    <Content Include="Images\e1.jpg" />
+    <Content Include="Images\e11.jpg" />
+    <Content Include="Images\e12.jpg" />
+    <Content Include="Images\e13.jpg" />
+    <Content Include="Images\e14.jpg" />
+    <Content Include="Images\e15.jpg" />
+    <Content Include="Images\e16.jpg" />
+    <Content Include="Images\e17.jpg" />
+    <Content Include="Images\e18.jpg" />
+    <Content Include="Images\e19.jpg" />
+    <Content Include="Images\e2.jpg" />
+    <Content Include="Images\e20.jpg" />
+    <Content Include="Images\e21.jpg" />
+    <Content Include="Images\e22.jpg" />
+    <Content Include="Images\e23.jpg" />
+    <Content Include="Images\e3.jpg" />
+    <Content Include="Images\e4.jpg" />
+    <Content Include="Images\e5.jpg" />
+    <Content Include="Images\e6.jpg" />
+    <Content Include="Images\e7.jpg" />
+    <Content Include="Images\earrings.png" />
+    <Content Include="Images\k1.jpg" />
+    <Content Include="Images\k10.jpg" />
+    <Content Include="Images\k11.jpg" />
+    <Content Include="Images\k12.jpg" />
+    <Content Include="Images\k13.jpg" />
+    <Content Include="Images\k14.jpg" />
+    <Content Include="Images\k15.jpg" />
+    <Content Include="Images\k16.jpg" />
+    <Content Include="Images\k17.jpg" />
+    <Content Include="Images\k18.jpg" />
+    <Content Include="Images\k2.jpg" />
+    <Content Include="Images\k3.jpg" />
+    <Content Include="Images\k4.jpg" />
+    <Content Include="Images\k5.jpg" />
+    <Content Include="Images\k6.jpg" />
+    <Content Include="Images\k7.jpg" />
+    <Content Include="Images\k8.jpg" />
+    <Content Include="Images\k9.jpg" />
+    <Content Include="Images\kid.jpg" />
+    <Content Include="Images\Kids.jpg" />
+    <Content Include="Images\Line-Design.jpg" />
+    <Content Include="Images\m1.jpg" />
+    <Content Include="Images\m11.jpg" />
+    <Content Include="Images\m12.jpg" />
+    <Content Include="Images\m13.jpg" />
+    <Content Include="Images\m14.jpg" />
+    <Content Include="Images\m15.jpg" />
+    <Content Include="Images\m16.jpg" />
+    <Content Include="Images\m17.jpg" />
+    <Content Include="Images\m2.jpg" />
+    <Content Include="Images\m22.jpg" />
+    <Content Include="Images\m3.jpg" />
+    <Content Include="Images\m32.jpg" />
+    <Content Include="Images\m4.jpg" />
+    <Content Include="Images\m42.jpg" />
+    <Content Include="Images\m5.jpg" />
+    <Content Include="Images\m52.jpg" />
+    <Content Include="Images\m6.jpg" />
+    <Content Include="Images\m62.jpg" />
+    <Content Include="Images\m7.jpg" />
+    <Content Include="Images\m72.jpg" />
+    <Content Include="Images\m8.jpg" />
+    <Content Include="Images\m82.jpg" />
+    <Content Include="Images\ma12.jpg" />
+    <Content Include="Images\mangalsutra.jpg" />
+    <Content Include="Images\Man.jpg" />
+    <Content Include="Images\men.jpg" />
+    <Content Include="Images\men1.jpg" />
+    <Content Include="Images\men10.jpg" />
+    <Content Include="Images\men11.jpg" />
+    <Content Include="Images\men12.jpg" />
+    <Content Include="Images\men13.jpg" />
+    <Content Include="Images\men14.jpg" />
+    <Content Include="Images\men15.jpg" />
+    <Content Include="Images\men16.jpg" />
+    <Content Include="Images\men17.jpg" />
+    <Content Include="Images\men18.jpg" />
+    <Content Include="Images\men2.jpg" />
+    <Content Include="Images\men3.jpg" />
+    <Content Include="Images\men4.jpg" />
+    <Content Include="Images\men5.jpg" />
+    <Content Include="Images\men6.jpg" />
+    <Content Include="Images\men7.jpg" />
+    <Content Include="Images\men8.jpg" />
+    <Content Include="Images\men9.jpg" />
+    <Content Include="Images\Menimage.jpg" />
+    <Content Include="Images\mo1.jpg" />
+    <Content Include="Images\mo10.jpg" />
+    <Content Include="Images\mo11.jpg" />
+    <Content Include="Images\mo12.jpg" />
+    <Content Include="Images\mo2.jpg" />
+    <Content Include="Images\mo3.jpg" />
+    <Content Include="Images\mo4.jpg" />
+    <Content Include="Images\mo5.jpg" />
+    <Content Include="Images\mo6.jpg" />
+    <Content Include="Images\mo7.jpg" />
+    <Content Include="Images\mo8.jpg" />
+    <Content Include="Images\mo9.jpg" />
+    <Content Include="Images\model7.jpg" />
+    <Content Include="Images\n1.jpg" />
+    <Content Include="Images\n11.jpg" />
+    <Content Include="Images\n12.jpg" />
+    <Content Include="Images\n13.jpg" />
+    <Content Include="Images\n14.jpg" />
+    <Content Include="Images\n15.jpg" />
+    <Content Include="Images\n16.jpg" />
+    <Content Include="Images\n17.jpg" />
+    <Content Include="Images\n2.jpg" />
+    <Content Include="Images\n3.jpg" />
+    <Content Include="Images\n4.jpg" />
+    <Content Include="Images\n5.jpg" />
+    <Content Include="Images\n6.jpg" />
+    <Content Include="Images\n7.jpg" />
+    <Content Include="Images\ne1.jpg" />
+    <Content Include="Images\ne10.jpg" />
+    <Content Include="Images\ne11.jpg" />
+    <Content Include="Images\ne12.jpg" />
+    <Content Include="Images\ne2.jpg" />
+    <Content Include="Images\ne3.jpg" />
+    <Content Include="Images\ne4.jpg" />
+    <Content Include="Images\ne5.jpg" />
+    <Content Include="Images\ne6.jpg" />
+    <Content Include="Images\ne7.jpg" />
+    <Content Include="Images\ne8.jpg" />
+    <Content Include="Images\ne9.jpg" />
+    <Content Include="Images\necklace.jpg" />
+    <Content Include="Images\new1.jpg" />
+    <Content Include="Images\new10.jpg" />
+    <Content Include="Images\new11.jpg" />
+    <Content Include="Images\new12.jpg" />
+    <Content Include="Images\new13.jpg" />
+    <Content Include="Images\new2.jpg" />
+    <Content Include="Images\new3.jpg" />
+    <Content Include="Images\new4.jpg" />
+    <Content Include="Images\new5.jpg" />
+    <Content Include="Images\new6.jpg" />
+    <Content Include="Images\new7.jpg" />
+    <Content Include="Images\new8.jpg" />
+    <Content Include="Images\new9.jpg" />
+    <Content Include="Images\NewArrival.jpg" />
+    <Content Include="Images\no1.jpg" />
+    <Content Include="Images\no10.jpg" />
+    <Content Include="Images\no11.jpg" />
+    <Content Include="Images\no12.jpg" />
+    <Content Include="Images\no2.jpg" />
+    <Content Include="Images\no3.jpg" />
+    <Content Include="Images\no4.jpg" />
+    <Content Include="Images\no5.jpg" />
+    <Content Include="Images\no6.jpg" />
+    <Content Include="Images\no7.jpg" />
+    <Content Include="Images\no8.jpg" />
+    <Content Include="Images\no9.jpg" />
+    <Content Include="Images\Nosepin.jpg" />
+    <Content Include="Images\r1.jpg" />
+    <Content Include="Images\r2.jpg" />
+    <Content Include="Images\r3.jpg" />
+    <Content Include="Images\r4.jpg" />
+    <Content Include="Images\r5.jpg" />
+    <Content Include="Images\r6.jpg" />
+    <Content Include="Images\r7.jpg" />
+    <Content Include="Images\ri1.jpg" />
+    <Content Include="Images\ri10.jpg" />
+    <Content Include="Images\ri11.jpg" />
+    <Content Include="Images\ri12.jpg" />
+    <Content Include="Images\ri2.jpg" />
+    <Content Include="Images\ri3.jpg" />
+    <Content Include="Images\ri4.jpg" />
+    <Content Include="Images\ri5.jpg" />
+    <Content Include="Images\ri6.jpg" />
+    <Content Include="Images\ri7.jpg" />
+    <Content Include="Images\ri8.jpg" />
+    <Content Include="Images\ri9.jpg" />
+    <Content Include="Images\ring.jpg" />
+    <Content Include="Images\w10.jpg" />
+    <Content Include="Images\w11.jpg" />
+    <Content Include="Images\w12.jpg" />
+    <Content Include="Images\w13.jpg" />
+    <Content Include="Images\w14.jpg" />
+    <Content Include="Images\w15.jpg" />
+    <Content Include="Images\w16.jpg" />
+    <Content Include="Images\w17.jpg" />
+    <Content Include="Images\w18.jpg" />
+    <Content Include="Images\w4.jpg" />
+    <Content Include="Images\w5.jpg" />
+    <Content Include="Images\w6.jpg" />
+    <Content Include="Images\w7.jpg" />
+    <Content Include="Images\w8.jpg" />
+    <Content Include="Images\w9.jpg" />
+    <Content Include="Images\Woman.jpg" />
+    <Content Include="Images\women1.jpg" />
+    <Content Include="Images\women2.jpg" />
+    <Content Include="Images\women3.jpg" />
+    <Content Include="Images\womenimage.jpg" />
+    <Content Include="JEWELLERY.HTML" />
+    <Content Include="Kids.html" />
+    <Content Include="Kids2.html" />
+    <Content Include="Kids3.html" />
+    <Content Include="ll.html" />
+    <Content Include="MAIN.HTML" />
+    <Content Include="MAIN2.html" />
+    <Content Include="MAIN3.html" />
+    <Content Include="MANGALSUTRA.HTML" />
+    <Content Include="MANGALSUTRA2.html" />
+    <Content Include="MANGALSUTRA3.html" />
+    <Content Include="Men.html" />
+    <Content Include="Men2.html" />
+    <Content Include="Men3.html" />
+    <Content Include="NECKLACE.HTML" />
+    <Content Include="NECKLACE2.html" />
+    <Content Include="NECKLACE3.html" />
+    <Content Include="New Arrival.html" />
+    <Content Include="New Arrival2.html" />
+    <Content Include="New Arrival3.html" />
+    <Content Include="RINGS.HTML" />
+    <Content Include="RINGS2.html" />
+    <Content Include="RINGS3.html" />
+    <Content Include="script.js" />
+    <Content Include="SEE ALL.HTML" />
+    <Content Include="SEE ALL2.html" />
+    <Content Include="SEE ALL3.html" />
+    <Content Include="ss.html" />
+    <Content Include="Videos\15s+banner+-+1278+%281%29+%281%29.mp4" />
+    <Content Include="Web.config" />
+    <Content Include="Women.html" />
+    <Content Include="Women2.html" />
+    <Content Include="Women3.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59149</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

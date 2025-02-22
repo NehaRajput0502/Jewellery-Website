@@ -1,0 +1,637 @@
+﻿<HTML>
+	<HEAD>
+		<TITLE>
+			JEWELLERY DESIGN
+		</TITLE>
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+	
+			.section {
+				text-decoration-line: none;
+			}
+	
+			.navbar {
+				overflow: hidden;
+				background-color: white;
+				font-family: Verdana, sans-serif;
+			}
+	
+				.navbar a.split {
+					float: right;
+					background-color: white;
+					color: black;
+				}
+	
+				.navbar a {
+	
+					float: center;
+					font-size: 15px;
+					color: black;
+					text-align: center;
+					padding: 25px 16px;
+					text-decoration: none;
+				}
+	
+			.dropdown {
+				float: left;
+				overflow: hidden;
+			}
+	
+				.dropdown .dropbtn {
+					font-size: 15px;
+					border: none;
+					outline: none;
+					color: black;
+					padding: 25px 40px;
+					background-color: white;
+					font-family: Verdana, sans-serif;
+					margin: 0;
+				}
+	
+				.navbar a:hover, .dropdown:hover .dropbtn {
+					color: #832729;
+					font-weight: bold;
+					text-decoration-line: none;
+				}
+	
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+	
+				.dropdown-content a {
+					float: none;
+					color: black;
+					padding: 12px 16px;
+					text-decoration: none;
+					display: block;
+					text-align: left;
+				}
+	
+					.dropdown-content a:hover {
+						background-color: #ddd;
+					}
+	
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+		   
+					/* * {
+						box-sizing: border-box
+					}
+			*/
+					body {
+						font-family: Verdana, sans-serif;
+						margin: 0;
+						
+					}
+	
+					.mySlides {
+						display: none
+					}
+	
+	
+	
+					/* Slideshow container */
+					.slideshow-container {
+						max-width: 100%;
+						position: relative;
+						margin: auto;
+					}
+	
+					/* Next & previous buttons */
+					.prev, .next {
+						cursor: pointer;
+						position: absolute;
+						top: 50%;
+						width: auto;
+						padding: 16px;
+						margin-top: -22px;
+						color: white;
+						font-weight: bold;
+						font-size: 18px;
+						transition: 0.6s ease;
+						border-radius: 0 3px 3px 0;
+						user-select: none;
+					}
+	
+					/* Position the "next button" to the right */
+					.next {
+						right: 0;
+						border-radius: 3px 0 0 3px;
+					}
+	
+						/* On hover, add a black background color with a little bit see-through */
+						.prev:hover, .next:hover {
+							background-color: rgba(0,0,0,0.8);
+						}
+	
+					/* Caption text */
+					.text {
+						color: #f2f2f2;
+						font-size: 15px;
+						padding: 8px 12px;
+						position: absolute;
+						bottom: 8px;
+						width: 100%;
+						text-align: center;
+					}
+	
+					/* Number text (1/3 etc) */
+					.numbertext {
+						color: #f2f2f2;
+						font-size: 12px;
+						padding: 8px 12px;
+						position: absolute;
+						top: 0;
+					}
+	
+					/* The dots/bullets/indicators */
+					.dot {
+						cursor: pointer;
+						height: 15px;
+						width: 15px;
+						margin: 0 2px;
+						background-color: #bbb;
+						border-radius: 50%;
+						display: inline-block;
+						transition: background-color 0.6s ease;
+					}
+	
+						.active, .dot:hover {
+							background-color: #717171;
+						}
+	
+					/* Fading animation */
+					.fade {
+						animation-name: fade;
+						animation-duration: 1.5s;
+					}
+	
+					@keyframes fade {
+						from {
+							opacity: .4
+						}
+	
+						to {
+							opacity: 1
+						}
+					}
+	
+					/* On smaller screens, decrease text size */
+					@media only screen and (max-width: 300px) {
+						.prev, .next, .text {
+							font-size: 11px
+						}
+					}
+	
+					div.polaroid {
+						width: 100%;
+						box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+						text-align: center;
+					}
+	
+					div.container {
+						padding: 10px;
+					}
+	
+					.img_hover:hover {
+						-ms-transform: scale(1.5); /* IE 9 */
+						-webkit-transform: scale(1.5); /* Safari 3-8 */
+						transform: scale(1.2);
+					}
+	
+					.overlay {
+						position: absolute;
+						bottom: 0;
+						left: 10;
+						right: 0;
+						overflow: hidden;
+						width: 0;
+						height: 93%;
+						transition: .5s ease;
+					}
+	
+					.container {
+						position: relative;
+						width: 100%;
+					}
+	
+						.container:hover .overlay {
+							width: 100%;
+						}
+	
+					.image {
+						display: block;
+						width: 340;
+						height: 400;
+					}
+		</style>
+	</HEAD>
+<body style="background-color:white">
+	<div class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn">
+				All Jewellery
+
+			</button>
+			<div class="dropdown-content">
+				<a href="RINGS.HTML">Finger Rings</a>
+				<a href="GOLD COIN.HTML">Chains</a>
+				<a href="NECKLACE.HTML">Necklaces</a>
+				<a href="SEE ALL.HTML">Anklets</a>
+				<a href="MANGALSUTRA.HTML">Mangalsutra</a>
+				<a href="EARRINGS.HTML">Earrings</a>
+				<a href="MAIN.HTML">Noise pin</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<a href="New Arrival.html" >
+				New Arrivals
+</a>
+			</button>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<a href="Offers and promotions1.html">
+				Offers & Promotions
+				</a>
+			</button>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">
+				<a href="BestSellers.html">
+					Best Sellers
+					</a>
+			</button>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<a href="#section1">
+					Latest Collections
+				</a>
+
+			</button>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">
+				<a href="#section2">
+					Help
+				</a>
+			</button>
+		</div>
+
+		
+			<a class="split" href="Login.php"><i class="fa fa-fw fa-user"></i></a> 
+			
+				
+				<a href="#">
+					<a class="split"><i class="fa fa-fw fa-shopping-cart"></i> </a>
+
+					<a href="#"><a class="split"><i class="fa fa-fw fa-search"></i> </a></a>
+
+
+
+
+					<VIDEO SRC="Videos\15s+banner+-+1278+(1)+(1).mp4" HEIGHT="500" WIDTH="100%" CONTROLS AUTOPLAY MUTED LOOP>
+					</VIDEO>
+					<BR><BR><BR><BR>
+					<FONT FACE="Georgia" SIZE="10" color="#832729">
+						<CENTER>&nbsp;&nbsp;&nbsp;Shop by Category</CENTER>
+						<img src="Images\Line-Design.jpg" style="width:100%">
+						<b>
+							<TABLE BORDER="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+								<TR>
+									<TD>
+										<TABLE BORDER="0" WIDTH="100%" CELLPADDING="15" CELLSPACING="0" />
+									</TD>
+									<TD>
+										&nbsp;
+									</TD>
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images\ring.jpg" HEIGHT="150" WIDTH="150" USEMAP="#RINGS">
+											<MAP NAME="RINGS">
+
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="RINGS.HTML">
+											</MAP>
+										</H5>
+										<text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fingerrings</text>
+									</TD>
+
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images\chain.jpg" HEIGHT="150" WIDTH="150" USEMAP="#GOLD COIN">
+											<MAP NAME="GOLD COIN">
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="GOLD COIN.HTML">
+											</MAP>
+										</H5><text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chains</text>
+									</TD>
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images\necklace.jpg" HEIGHT="150" WIDTH="150" USEMAP="#NECKLACE">
+											<MAP NAME="NECKLACE">
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="NECKLACE.HTML">
+											</MAP>
+										</H5><text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Necklaces</text>
+									</TD>
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images\anklet.jpg" HEIGHT="150" WIDTH="150" USEMAP="#SEE ALL">
+											<MAP NAME="SEE ALL">
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="SEE ALL.HTML">
+											</MAP>
+										</H5><text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anklets</text>
+									</TD>
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images/mangalsutra.jpg" HEIGHT="150" WIDTH="150" USEMAP="#MANGALSUTRA">
+											<MAP NAME="MANGALSUTRA">
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="MANGALSUTRA.HTML">
+											</MAP>
+										</H5><text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mangalsutra</text>
+									</TD>
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images/earrings.png" HEIGHT="150" WIDTH="150" USEMAP="#EARRINGS">
+											<MAP NAME="EARRINGS">
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="EARRINGS.HTML">
+											</MAP>
+										</H5><text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earrings</text>
+									</TD>
+									<TD>
+										<H5 ALIGN="LEFT">
+											<IMG SRC="Images/Nosepin.jpg" HEIGHT="150" WIDTH="150" USEMAP="#MAIN">
+											<MAP NAME="MAIN">
+												<AREA SHAPE="RECT" COORDS="2,2,156,156" HREF="MAIN.HTML">
+											</MAP>
+										</H5><text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nose pin</text>
+									</TD>
+								</TR>
+							</TABLE>
+							</TABLE>
+						</b>
+					</FONT>
+					<br /><br /><br />
+					<body>
+
+						<div class="slideshow-container">
+
+							<div class="mySlides fade">
+								<div class="numbertext">1 / 3</div>
+								<img src="Images\1.jpg" style="width:100%">
+
+							</div>
+
+							<div class="mySlides fade">
+								<div class="numbertext">2 / 3</div>
+								<img src="Images\2.jpg" style="width:100%">
+
+							</div>
+
+							<div class="mySlides fade">
+								<div class="numbertext">3 / 3</div>
+								<img src="Images\3.jpg" style="width:100%">
+
+							</div>
+
+							<a class="prev" onclick="plusSlides(-1)">❮</a>
+							<a class="next" onclick="plusSlides(1)">❯</a>
+
+						</div>
+						<br>
+
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+						</div>
+
+						<script>
+							let slideIndex = 1;
+							showSlides(slideIndex);
+
+							function plusSlides(n) {
+								showSlides(slideIndex += n);
+							}
+
+							function currentSlide(n) {
+								showSlides(slideIndex = n);
+							}
+
+							function showSlides(n) {
+								let i;
+								let slides = document.getElementsByClassName("mySlides");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) { slideIndex = 1 }
+								if (n < 1) { slideIndex = slides.length }
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex - 1].style.display = "block";
+								dots[slideIndex - 1].className += " active";
+							}
+						</script>
+
+
+
+						<br /> <br /><br />
+						<FONT FACE="Georgia" SIZE="10" color="#832729">
+							<CENTER>&nbsp;&nbsp;&nbsp;Shop by Gender</CENTER>
+							<img src="Images\Line-Design.jpg" style="width:100%">
+
+							<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+								<TR>
+									<TD>
+										<TABLE BORDER="0" WIDTH="100%" CELLPADDING="25" CELLSPACING="25" />
+									</TD>
+									<TD>
+										<H4 ALIGN="CENTER">
+											<div class="img_hover">
+												<div class="polaroid">
+													<img src="Images/Man.jpg" alt="Norway" style="width:100%">
+												
+													<div class="container">
+														<FONT FACE="Georgia" SIZE="4" color="#832729">
+															
+															<a href="Men.html"><p>Men</p></a>
+														</FONT>
+													</div>
+												</div>
+											</div>
+
+										</H4>
+									</TD>
+									<TD>
+										<H4 ALIGN="CENTER">
+											<div class="img_hover">
+												<div class="polaroid">
+													<img src="Images/Woman.jpg" alt="Norway" style="width:100%">
+													<div class="container">
+														<FONT FACE="Georgia" SIZE="4" color="#832729">
+															<a href="Women.html"><p>Women</p></a>
+														</FONT>
+													</div>
+												</div>
+											</div>
+										</H4>
+									</TD>
+									<TD>
+										<H4 ALIGN="CENTER">
+											<div class="img_hover">
+												<div class="polaroid">
+													<img src="Images/kid.jpg" alt="Norway" style="width:100%">
+													<div class="container">
+														<FONT FACE="Georgia" SIZE="4" color="#832729">
+															<a href="Kids.html"><p>Kids</p></a>
+														</FONT>
+													</div>
+												</div>
+											</div>
+										</H4>
+									</TD>
+								</TR>
+							</table>
+						</FONT>
+						<BR>
+						<BR>
+
+
+
+
+						<FONT FACE="Georgia" SIZE="10" color="#832729">
+							<div class="section" id="section1">
+
+								<CENTER>Latest Collections</CENTER>
+							</div>
+							<img src="Images\Line-Design.jpg" style="width:100%">
+
+							<center>
+								<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="5">
+									<TR>
+										<TD>
+											<TABLE BORDER="0" WIDTH="100%" CELLPADDING=0 CELLSPACING="7" />
+										</TD>
+
+										<TD>
+											<div class="container">
+												<H4 ALIGN="CENTER">
+													<img src="Images\m2.jpg" class="image">
+													<div class=" overlay">
+														<img src="Images\m22.jpg" class="image">
+												</H4>
+											</div>
+	</div>
+	</TD>
+
+	<TD>
+		<div class="container">
+			<H4 ALIGN="CENTER">
+				<img src="Images\m5.jpg" alt="Workplace" class="image">
+				<div class=" overlay">
+					<img src="Images\m52.jpg" class="image">
+			</H4>
+	</TD>
+	<TD>
+		<div class="container">
+			<H4 ALIGN="CENTER">
+				<img src="Images\m8.jpg" alt="Workplace" class="image">
+				<div class=" overlay">
+					<img src="Images\m82.jpg" class="image">
+
+			</H4>
+	</TD>
+	<TD>
+		<div class="container">
+			<H4 ALIGN="CENTER">
+				<img src="Images\m7.jpg" alt="Workplace" class="image">
+				<div class=" overlay">
+					<img src="Images\m72.jpg" class="image">
+
+			</H4>
+	</TD>
+	</TR>
+	</center>
+	</table>
+	</FONT>
+
+
+	<BR>
+	<BR>
+	
+
+	<FONT FACE="Georgia" SIZE="10" color="#832729">
+		<div class="section" id="section2">
+
+			<CENTER>Help</CENTER>
+		</div>
+		<img src="Images\Line-Design.jpg" style="width:100%">
+		<style>
+			#th2 {
+				text-align: left;
+				padding-left: 100px;
+			}
+
+			#td2 {
+				text-align: left;
+				padding-left: 100px;
+			}
+
+			#table2 {
+				width: 100%;
+				font-family: Georgia;
+			}
+		</style>
+
+		<table id="table2" border="0" cellspacing="0" cellpadding="30">
+			<colgroup>
+				<col span="2" style="background-color: #ffe6e6; width: 100%;">
+			</colgroup>
+
+			<tr>
+				<th id="th2">
+					<table id="table2" border="0" cellspacing="30" cellpadding="15">
+				</th>
+			</tr>
+			<tr>
+				<th id="th2"><h3>Quick Links</h3></th>
+				<th id="th2"><h3>Info</h3></th>
+				<th id="th2"><h3>Contact Us</h3></th>
+			</tr>
+			<tr>
+				<td id="td2"><a href="Customer Reviews.html">Customer Reviews</a></td>
+				<td id="td2"><a href="Shiiping and Returns.html">Shipping & Returns</a></td>
+				<td id="td2">E-mail : rishreya143@gmail.com</td>
+			</tr>
+			<tr>
+				<td id="td2"><a href="Terms of Services.html">Terms of Service</a></td>
+				<td id="td2"><a href="Terms .html">Privacy Policy</a></td>
+				<td id="td2">For any suggestions, queries or complaints please contact us:<br>375636386</br></td>
+			</tr>
+			<tr>
+				<td id="td2"><a href="Offers and promotions1.html">Offers & Promotions</a></td>
+				<td id="td2"><a href="FaQ and SUPPORT.html">FAQ & Support</a></td>
+				
+			</tr>
+			<tr>
+				<td id="td2"><a href="Delivery Info.html">Delivery Information</a></td>
+
+
+			</tr>
+
+
+		</table>
+		</table>
+
+</body>
+</HTML>

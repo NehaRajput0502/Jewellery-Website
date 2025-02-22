@@ -1,0 +1,406 @@
+﻿<HTML>
+<HEAD>
+    <TITLE>
+       Best Sellers
+    </TITLE>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 4px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+                margin: 0 4px;
+            }
+
+                .pagination a.active {
+                    background-color: pink;
+                    color: white;
+                    border: 1px solid pink;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+        .navbar {
+            overflow: hidden;
+            background-color: white;
+            font-family: Verdana, sans-serif;
+        }
+
+            .navbar a.split {
+                float: right;
+                background-color: white;
+                color: black;
+            }
+
+            .navbar a {
+                float: center;
+                font-size: 16px;
+                color: black;
+                text-align: center;
+                padding: 25px 16px;
+                text-decoration: none;
+            }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: black;
+                padding: 25px 40px;
+                background-color: white;
+                font-family: Verdana, sans-serif;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                color: #832729;
+                font-weight: bold;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* * {
+                    box-sizing: border-box
+                }
+        */
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+
+        div.polaroid {
+            width: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.container {
+            padding: 10px;
+        }
+
+        .img_hover:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 10;
+            right: 0;
+            overflow: hidden;
+            width: 0;
+            height: 93%;
+            transition: .5s ease;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+            .container:hover .overlay {
+                width: 100%;
+            }
+
+        .image {
+            display: block;
+            width: 340;
+            height: 400;
+        }
+    </style>
+</HEAD>
+<body style="background-color:white">
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">
+                All Jewellery
+
+            </button>
+            <div class="dropdown-content">
+                <a href="RINGS.HTML">Finger Rings</a>
+                <a href="GOLD COIN.HTML">Chains</a>
+                <a href="NECKLACE.HTML">Necklaces</a>
+                <a href="SEE ALL.HTML">Anklets</a>
+                <a href="MANGALSUTRA.HTML">Mangalsutra</a>
+                <a href="EARRINGS.HTML">Earrings</a>
+                <a href="MAIN.HTML">Noise pin</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a href="New Arrival.html">
+                    New Arrivals
+                    </a>
+
+            </button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Offers & Promotions
+
+            </button>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a href="BestSellers.html">
+                    Best Sellers
+                    </a>
+            </button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a href="#section1">
+                    Latest Collections
+                </a>
+
+            </button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Help
+
+            </button>
+
+        </div>
+
+        <a href="#">
+            <a class="split" href="Login.php"><i class="fa fa-fw fa-user"></i> </a>
+                <a href="#">
+                    <a class="split"><i class="fa fa-fw fa-shopping-cart"></i> </a>
+
+                    <a href="#"><a class="split"><i class="fa fa-fw fa-search"></i> </a></a>
+
+                    <IMG SRC="Images/1.jpg" WIDTH="100%">
+                    <img src="Images\Line-Design.jpg" style="width:100%">
+
+                    <TABLE BORDER="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+                        <TR>
+                            <TD>
+                                <TABLE BORDER="0" WIDTH="100%" CELLPADDING="15" CELLSPACING="0">
+                            </TD>
+                            <TD>
+                                <H4 ALIGN="CENTER">
+                                    <IMG SRC="Images/new13.jpg" HEIGHT="400" WIDTH="400" USEMAP="#new13">
+                                        <MAP NAME="new13">
+    
+                                            <AREA SHAPE="RECT" COORDS="20,20,500,500" HREF="new13.html">
+    
+                                    <br /><br />₹1,399
+                                </H4>
+                            </TD>
+                            <TD>
+                                <H4 ALIGN="CENTER">
+                                    <IMG SRC="Images/e18.jpg" HEIGHT="400" WIDTH="400" USEMAP="#e18">
+                                        <MAP NAME="e18">
+    
+                                            <AREA SHAPE="RECT" COORDS="20,20,500,500" HREF="e18.html">
+    
+                                    <BR><br />₹2,000
+                                </H4>
+                            </TD>
+                            <TD>
+                                <H4 ALIGN="CENTER">
+                                    <IMG SRC="Images/e16.jpg" HEIGHT="400" WIDTH="400" USEMAP="#e16">
+                                        <MAP NAME="e16">
+    
+                                            <AREA SHAPE="RECT" COORDS="20,20,500,500" HREF="e16.html">
+    
+                                    <BR><br />₹1,500
+                                </H4>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD>
+                                <H4 ALIGN="CENTER">
+                                    <IMG SRC="Images/no1.jpg" HEIGHT="400" WIDTH="400" USEMAP="#no1">
+                                        <MAP NAME="no1">
+    
+                                            <AREA SHAPE="RECT" COORDS="20,20,500,500" HREF="no1.html">
+    
+                                    <BR><br />₹2,000
+                                </H4>
+                            </TD>
+                            <TD>
+                                <H4 ALIGN="CENTER">
+
+
+                                    <img src="Images/e2.jpg" alt="Norway" width="400" height="400" USEMAP="#e2">
+                                    <MAP NAME="e2">
+
+                                        <AREA SHAPE="RECT" COORDS="20,20,500,500" HREF="e2.html">
+
+
+                                    <BR><br />₹2,500
+
+                                </H4>
+                            </TD>
+                            <TD>
+                                <H4 ALIGN="CENTER">
+                                    <IMG SRC="Images/c17.jpg" HEIGHT="400" WIDTH="400" USEMAP="#c17">
+                                        <MAP NAME="c17">
+    
+                                            <AREA SHAPE="RECT" COORDS="20,20,500,500" HREF="c17.html">
+    
+                                    <BR><br />₹1,100
+                                </H4>
+                            </TD>
+                        </TR>
+                        </FONT>
+                    </TABLE>
+                    </table>
+                    <div class="center">
+                        <div class="pagination">
+                            <a href="BestSellers2.html">&laquo;</a>
+                            <a href="BestSellers2.html">2</a>
+                            <a href="BestSellers3.html" class="active">3</a>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+</body>
+</HTML>
