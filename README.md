@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2e4105be-6639-4bad-b916-79c0fd0fc840)# Jewellery-Website
+# Jewellery-Website
 
 ##Abstract:
 Online Jewellery Shop is basically used to build an application program which help people to find and buy latest design of jewellery with different categories like Gold, Silver, Diamond. It is useful in the way that it makes an easier way to buy products online.
@@ -51,6 +51,58 @@ This section provides an overview of the system's functional requirements. The s
 #User Interface-
 
 Registration:
+
+![Registration](https://github.com/user-attachments/assets/66d3f143-ffdc-4adb-b558-6091d3c53c71)
+
+
+Login:
+
+![Login](https://github.com/user-attachments/assets/500ea477-7f28-4dab-b36b-5343ee906899)
+
+
+Home Page:
+
+![Home Page](https://github.com/user-attachments/assets/73ced1bf-6054-4533-87f0-e59d77ef35ce)
+
+![Home Page2](https://github.com/user-attachments/assets/71af3ea6-4122-41c2-8c3c-5f2fcb47d2b9)
+
+![Home Page3](https://github.com/user-attachments/assets/db8605e3-6b07-420b-907f-77f34f0cec63)
+
+![Home Page4](https://github.com/user-attachments/assets/5798a3fb-a9a7-4cc1-b085-14ecaca88269)
+
+![Home Page5](https://github.com/user-attachments/assets/fc6747d2-2ab7-4329-b250-50aad82af91b)
+
+
+Product Page:
+
+![Product Page](https://github.com/user-attachments/assets/d0354876-ddfd-4a8c-9287-b96f6e2d5c48)
+
+![Product Page2](https://github.com/user-attachments/assets/f6239054-0741-4331-a515-aa33b8d3309d)
+
+
+Product Information Page:
+
+![Product Information Page](https://github.com/user-attachments/assets/9c23a56f-e0a3-43b7-b36a-f5351577a4b0)
+
+
+Buy Now:
+                              Buy Now
+                              
+![Buy Now](https://github.com/user-attachments/assets/44858b17-1a96-4dfb-9997-e447c3283400)
+
+                              User Details
+                              
+![User details](https://github.com/user-attachments/assets/e3bab48d-ff30-4269-be18-a737ef3264c4)
+
+
+
+
+
+
+
+
+
+
 
 
 
